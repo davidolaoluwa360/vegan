@@ -1,0 +1,65 @@
+/**************************************** Event Card Section ***********************/
+.event-section {
+  background: var(--tertiary-color);
+  padding: 4rem 2.5rem;
+}
+
+.event-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  color: white;
+  grid-gap: 5%;
+}
+
+.event-card {
+  background: var(--darken-color);
+  border-radius: 6px;
+}
+
+.event-card img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.event-card img:hover {
+  transform: scale(1.2) rotate(7deg);
+}
+
+.event-content {
+  padding: 0.3rem 1rem;
+}
+
+.event-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.event-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  color: black;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin: 0.7rem;
+  padding: 0.2rem 0.7rem;
+}
+
+.event-calendar-date {
+  color: var(--primary-color);
+}
+
+.event-card-title {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.event-card-timestamps {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/************************************* Event Card Section End ***********************/

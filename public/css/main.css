@@ -1,0 +1,226 @@
+/********************************** Hero section ***********************************/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .swiper-wrapper .slide-1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../images/Hero1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  position: relative;
+}
+
+.swiper-container .swiper-wrapper .slide-2 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../images/Hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  position: relative;
+}
+
+.swiper-container .swiper-wrapper .slide-3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../images/Hero3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  position: relative;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .hero-content__wrapper {
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 38%;
+  left: 20%;
+  color: var(--secondary-color);
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .hero-content__wrapper h1 {
+  font-weight: bolder;
+  font-size: 3.3rem;
+}
+
+.hero-content__wrapper .hero-btn__wrapper .hero-BookBtn {
+  background-color: white;
+  color: #fbc449;
+  border: none;
+  border-radius: 15px;
+  padding: 0.7rem 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hero-content__wrapper .hero-btn__wrapper .hero-MenuBtn {
+  border: 3px solid #fbc449;
+  color: #fbc449;
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  margin-left: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  color: white !important;
+  margin-left: 2rem !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 90px;
+  padding: 3rem;
+}
+
+.swiper-button-next {
+  color: white !important;
+  margin-right: 2rem !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 90px;
+  padding: 3rem;
+}
+
+/********************************************* Hero Section End ******************************/
+
+/****************************************** Service Section ************************************/
+.service--container {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/Hero1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 3rem 2rem;
+}
+
+.service--card__container {
+  background-color: var(--tertiary-color);
+  margin-top: 6rem;
+  padding-top: 1.4rem;
+}
+
+.service--card__wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+}
+
+.service--card {
+  flex: 0 0 25%;
+  margin-left: 3%;
+  text-align: center;
+  background-color: #101010;
+  border-top: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  padding: 3.3rem 1.2rem;
+}
+
+.service--card i {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.service-card-title {
+  font-weight: bolder;
+}
+
+.service-card-text {
+  color: var(--text-color);
+}
+/****************************************** Service Section End  *******************************/
+
+/********************************************** Blog Section ************************************/
+.blog--container {
+  background-color: black;
+  padding: 3rem 1.5rem;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 1.3rem;
+}
+
+.card {
+  margin-left: 4%;
+  flex: 0 0 28%;
+  color: white;
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+.card-brand {
+  overflow: hidden;
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 1s ease-in;
+}
+
+.card img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content .card-title {
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.card-content .card-title:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.card-content .card-text {
+  color: var(--text-color);
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.card-action .blog_created_at {
+  font-weight: bolder;
+}
+
+.card-action .more__blogs {
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.card-action .more__blogs:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.view-more-blog__wrapper {
+  text-align: center;
+  margin-top: 1.9rem;
+}
+
+.view-more-blog__wrapper button {
+  font-weight: bolder;
+}
+/********************************************** Blog Section End ********************************/

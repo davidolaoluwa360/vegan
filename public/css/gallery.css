@@ -1,0 +1,147 @@
+/************************** Menu Styles *********************/
+
+/* filter styles */
+.menu-filter__wrapper {
+  text-align: center;
+}
+
+.btn-filter {
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.7rem;
+  font-weight: bolder;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-filter.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-filter:focus,
+.btn-filter:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* menu content styles */
+.menu-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 4%;
+}
+
+@keyframes menuCard {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-content .menu-card {
+  border-radius: 10px;
+  position: relative;
+}
+
+.menu-content .menu-card img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu-card:hover [data-menu="dessert"]::before {
+  transition: 2s ease;
+  opacity: 100%;
+  content: "Dessert";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bolder;
+  width: 90%;
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(255, 255, 255, 0.4);
+  animation: menuCard .6s ease;
+  border-radius: 10px;
+  height: 90%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.menu-card:hover [data-menu="dinner"]::before {
+  content: "Dinner";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bolder;
+  width: 90%;
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(255, 255, 255, 0.4);
+  animation: menuCard .6s ease;
+  border-radius: 10px;
+  height: 90%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.menu-card:hover [data-menu="breakfast"]::before {
+  content: "Break Fast";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bolder;
+  width: 90%;
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(255, 255, 255, 0.4);
+  animation: menuCard .6s ease;
+  border-radius: 10px;
+  height: 90%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.menu-card:hover [data-menu="lunch"]::before {
+  content: "Lunch";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bolder;
+  width: 90%;
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(255, 255, 255, 0.4);
+  animation: menuCard .6s ease;
+  border-radius: 10px;
+  height: 90%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+/************************* Menu Styles End ******************/
